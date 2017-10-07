@@ -16,7 +16,7 @@
     "autoload": {
         "psr-4": {
             "Simplyfier\\": "",
-            "Simplyfier\\Debugger\\Providers\\": "providers",
+            "Simplyfier\\Debugger\\Providers\\": "providers"
         }
     }
 }
