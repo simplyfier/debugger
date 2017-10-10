@@ -1,6 +1,6 @@
 <?php
 /**
- * StupidlySimple Framework - A PHP Framework For Lazy Developers
+ * StupidlySimple Framework - A PHP Framework For Lazy Developers.
  *
  * Copyright (c) 2017 Fariz Luqman
  *
@@ -22,21 +22,20 @@
  * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
- * @package     StupidlySimple
  * @author      Fariz Luqman <fariz.fnb@gmail.com>
  * @copyright   2017 Fariz Luqman
  * @license     MIT
+ *
  * @link        https://stupidlysimple.github.io/
  */
 
 namespace Simplyfier\Debugger\Providers;
 
-use \Whoops\Run;
-use \Whoops\Handler\PrettyPageHandler;
+use Whoops\Handler\PrettyPageHandler;
+use Whoops\Run;
 
 /**
- * Class Whoops
- * @package Simplyfier\Debugger\Providers
+ * Class Whoops.
  *
  * @since 0.5.0
  */
@@ -51,6 +50,7 @@ class Whoops
     {
         $whoops = new \Whoops\Run();
         $whoops->pushHandler(new PrettyPageHandler());
+
         return $whoops->register();
     }
 }
